@@ -134,34 +134,6 @@ audio.bg-audio {
   color: black;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  position: relative;
-  width: 200px;
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
 
 
 
