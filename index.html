@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>@IG westcxx</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+  <audio id="bg-audio" controls class="bg-audio" autoplay muted loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="hero">
+    
+    <video id="bg-video" autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    
+    <button id="mute-btn">Unmute</button>
+
+
+   <div class="overlay">
+      <h1>TOJI</h1>
+      <p>Gamer</p>
+      <a href="#about" class="btn">Explore</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m a competitive gamer.</p>
+  </section>
+
+  <section id="stats" class="section dark">
+  <h2>Top Games</h2>
+  <div class="cards">
+    <div class="card" style="background-image: url('valorant.jpg');">
+      <p>VALORANT</p>
+    </div>
+    <div class="card" style="background-image: url('csgo2.png');">
+      <p>CSGO 2</p>
+    </div>
+    <div class="card" style="background-image: url('gtarp.png');">
+      <p>GTA RP</p>
+    </div>
+    <div class="card" style="background-image: url('bgmi.jpg');">
+      <p>BGMI</p>
+    </div>
+    <div class="card" style="background-image: url('assetto.jpg');">
+      <p>ASSETTO CORSA</p>
+    </div>
+
+    <div class="card" style="background-image: url('cod.png');">
+      <p>CALL OF DUTY</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="videos" class="section">
+    <h2>Clips</h2>
+    <div class="videos">
+      <iframe src="clip1.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tojiwaifu111@gmail.com">tojiwaifu111@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/heyyy_toji">Instagram</a>
+      <a href="https://youtube.com/@rad_og">YouTube</a>
+      <a href="https://discord.gg/h7MDFvWMqx">Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Gamer Tag. All rights reserved.</p>
+  </footer>
+
+ 
+  <script>
+    const video = document.getElementById('bg-video');
+    const audio = document.getElementById('bg-audio');
+    const muteBtn = document.getElementById('mute-btn');
+
+    muteBtn.addEventListener('click', () => {
+      const isMuted = video.muted;
+      video.muted = !isMuted;
+      audio.muted = !isMuted;
+      muteBtn.textContent = isMuted ? 'Mute' : 'Unmute';
+    });
+  </script>
+
+
+
+</body>
+
+</html>
